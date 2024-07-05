@@ -33,38 +33,48 @@
         <p class="lead">¡Vamos a jugar al TaTeTi (Tic-tac-toe)!</p>
         <p class="lead">Para poder colocar tu ficha primero deberás responder correctamente</p>
         <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Jugar</a>
+          <button id="jugar" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Jugar</button>
         </p>
         <div class="container">
           <div class="row">
             <div class="col-md-3 player">
-              <h3>Jugador 1</h3>
+              <h3 id="X">Jugador X</h3>
               <!-- Contenido para el jugador 1 -->
+              <div id="question-container-X" class="question-container hidden">
+                <h2 id="question"></h2>
+                <button id="answer1" class="btn btn-lg btn-secondary fw-bold border-white bg-white answer">Aguda</button>
+                <button id="answer2" class="btn btn-lg btn-secondary fw-bold border-white bg-white answer">Grave</button>
+                <button id="answer3" class="btn btn-lg btn-secondary fw-bold border-white bg-white answer">Esdrújula</button>              </div>
             </div>
             <div class="col-md-6 game">
-              <h3>Juego</h3>
               <!-- Contenido del juego -->
               <table class="tateti">
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td id="c1"></td>
+                  <td id="c2"></td>
+                  <td id="c3"></td>
                 </tr>
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td id="c4"></td>
+                  <td id="c5"></td>
+                  <td id="c6"></td>
                 </tr>
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td id="c7"></td>
+                  <td id="c8"></td>
+                  <td id="c9"></td>
                 </tr>
               </table>
             </div>
             <div class="col-md-3 player">
-              <h3>Jugador 2</h3>
+              <h3 id="O">Jugador O</h3>
               <!-- Contenido para el jugador 2 -->
+              <div id="question-container-O" class="question-container hidden">
+                <h2 id="question"></h2>
+                <button id="answer1" class="btn btn-lg btn-secondary fw-bold border-white bg-white answer">Aguda</button>
+                <button id="answer2" class="btn btn-lg btn-secondary fw-bold border-white bg-white answer">Grave</button>
+                <button id="answer3" class="btn btn-lg btn-secondary fw-bold border-white bg-white answer">Esdrújula</button>
+              </div>
             </div>
           </div>
         </div>
